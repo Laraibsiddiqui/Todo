@@ -1,0 +1,172 @@
+.Todo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgb(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgb(0, 0, 0, .6);
+    border-radius: 10px;
+}
+
+.Todo:hover {
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+}
+
+.Heading {
+    color: #fff;
+    text-align: center;
+}
+
+.Todo .Todo-List {
+    position: relative;
+}
+
+.Todo-List input {
+    width: 240px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.Todo .Todo-List label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.Todo-List  input:focus~label {
+
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+
+}
+
+.Todo .Todo-List i {
+    position: relative;
+    display: inline;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    margin-left: 10px;
+    letter-spacing: 4px;
+    border: none;
+    background: none;
+    text-decoration: none;
+}
+
+.Todo .Todo-List i:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 0 5px #03e9f4,
+        0 0 25px #03e9f4,
+        0 0 50px #03e9f4,
+        0 0 100px #03e9f4;
+}
+
+.VList {
+    height: 150px;
+    width: 350px;
+    position: relative;
+    overflow-y: scroll;
+}
+
+.VList::-webkit-scrollbar {
+    width: 20px;
+}
+ ::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 10px;
+}
+
+.VList ::-webkit-scrollbar-thumb:hover {
+    background: black;
+}
+
+.List {
+    display: flex;
+    flex-direction: column;
+}
+
+.List .On-List {
+    display: flex;
+    flex-direction: row;
+}
+
+.List .On-List h3 {
+    position: relative;
+    color: #fff;
+    bottom: 25px;
+}
+
+#Delete {
+    position: absolute;
+    display: inline;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+    margin-left: 250px;
+    letter-spacing: 4px;
+    border: none;
+    background: none;
+    text-decoration: none;
+}
+#Edit{
+    position: absolute;
+    display: inline;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+    margin-left: 210px;
+    letter-spacing: 4px;
+    border: none;
+    background: none;
+    text-decoration: none;
+
+}
+.Ola{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.Hola {
+    height: 200px;
+    width: 200px;
+    background-color: #fff;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 5px;
+}
